@@ -41,14 +41,17 @@ function Register() {
   }
 
   function handleSubmit(e) {
-   
+   e.preventDefault()
+
     if(validate()){
+    let user = JSON.parse(localStorage.getItem('courses'))
     let worker = {
       name: nameRef,
       password: passwordRef
       
     }
-    localStorage.setItem("user", JSON.stringify(worker))
+    user.push(worker)
+    localStorage.setItem('user', JSON.stringify(user))
 
   }
   
