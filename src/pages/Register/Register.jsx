@@ -47,8 +47,9 @@ function Register() {
       name: nameRef,
       password: passwordRef
     }
-    localStorage.setItem("user", JSON.stringify(worker))
+    
   }
+  localStorage.setItem("user", JSON.stringify(worker))
   }
 
 
