@@ -24,14 +24,14 @@ button {
   width: 50%;
   color: #FFF;
   border-radius: 5px;
-  background: #0015ff;
+  background: #00ff0d;
   transition: all 0.3s;
   border: 3px solid #f0a91b;
 }
 
 .formWrapper button:hover {
   background: #fff;
-  color: #8d3b12;
+  color: #1e14e2;
 }
 
 .sign {
