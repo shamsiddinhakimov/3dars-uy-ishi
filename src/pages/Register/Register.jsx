@@ -43,11 +43,11 @@ function Register() {
   function handleSubmit(e) {
     e.preventDefault()
     if(validate()){
-    const user = {
+    let worker = {
       name: nameRef,
       password: passwordRef
     }
-    localStorage.setItem("user", JSON.stringify(user))
+    localStorage.setItem("user", JSON.stringify(worker))
   }
   }
 
