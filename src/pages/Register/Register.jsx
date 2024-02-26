@@ -2,9 +2,9 @@ import styles from "./Register.module.css"
 import { useRef } from "react"
 
 function Register() {
-  const nameRef = useRef();
-  const passwordRef = useRef();
-  const rePasswordRef = useRef();
+  let nameRef = useRef();
+  let passwordRef = useRef();
+  let rePasswordRef = useRef();
 
   function validate() {
     if(!nameRef.current.value) {
