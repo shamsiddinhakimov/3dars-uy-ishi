@@ -41,7 +41,7 @@ function Register() {
   }
 
   function handleSubmit(e) {
-    e.preventDefault()
+   
     if(validate()){
     let worker = {
       name: nameRef,
