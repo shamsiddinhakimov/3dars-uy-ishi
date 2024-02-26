@@ -45,7 +45,8 @@ function Register() {
     if(validate()){
     const user = {
       name: nameRef,
-      password: passwordRef 
+      password: passwordRef
+
     }
     localStorage.setItem("user", JSON.stringify(user))
   }
