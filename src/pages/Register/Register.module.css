@@ -22,7 +22,7 @@ button {
     border-radius: 5px;
     background: #0015ff;
     transition: all 0.3s;
-    border: 3px solid #0015ff;
+    border: 3px solid #ff6600;
 }
 
 .formWrapper button:hover {
