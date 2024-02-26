@@ -46,7 +46,6 @@ function Register() {
     const user = {
       name: nameRef,
       password: passwordRef
-
     }
     localStorage.setItem("user", JSON.stringify(user))
   }
