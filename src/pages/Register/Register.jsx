@@ -2,9 +2,9 @@ import styles from "./Register.module.css"
 import { useRef } from "react"
 
 function Register() {
-  let nameRef = useRef();
-  let passwordRef = useRef();
-  let rePasswordRef = useRef();
+  let nameRef = useRef('');
+  let passwordRef = useRef('');
+  let rePasswordRef = useRef('');
 
   function validate() {
     if(!nameRef.current.value) {
@@ -44,14 +44,13 @@ function Register() {
    e.preventDefault()
 
     if(validate()){
-    let user = JSON.parse(localStorage.getItem('courses'))
     let worker = {
       name: nameRef,
       password: passwordRef
       
     }
-    user.push(worker)
-    localStorage.setItem('user', JSON.stringify(user))
+    
+    localStorage.setItem('user', JSON.stringify(worker))
 
   }
   
